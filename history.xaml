@@ -1,0 +1,214 @@
+﻿<Window x:Class="FM6_H.history"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FM6_H"
+        mc:Ignorable="d"
+        Title="history" Height="450" Width="800" WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="48*"/>
+            <ColumnDefinition Width="121*"/>
+            <ColumnDefinition Width="113*"/>
+            <ColumnDefinition Width="124*"/>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="123*"/>
+            <ColumnDefinition Width="115*"/>
+            <ColumnDefinition Width="36*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.RowSpan="2" Background="#1111" Grid.ColumnSpan="8" Margin="0,0,0,1"/>
+        <Grid Background="#1111" Grid.ColumnSpan="8" Margin="0,1,0,1" Grid.Row="2"/>
+
+        <Label Content="تاريخ آخر دخول"  Grid.Row="1" FontSize="15" Margin="17,0,0,0" Cursor="Cross" Grid.Column="5" Height="44" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+
+        <Label Content="سجل الدخول"  Grid.Row="2" FontSize="15" Margin="14,0,4,0" Cursor="Cross" Grid.Column="5" Height="41" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+
+        <Button Content="معاينة سجل الدخول" Background="#00AAFF" FontFamily="Century Gothic" FontSize="10" Foreground="#FFFBFBFB" BorderBrush="{x:Null}" Margin="22,12,10,18" Click="Button_Click" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" />
+
+
+        <Border  Background="Gray" BorderBrush="Black" BorderThickness="1" Grid.Row="3" Grid.ColumnSpan="8" Margin="0,1,0,0"/>
+        <Label HorizontalAlignment="Center" Content="برامج وتطبيقات"  Grid.Row="3" FontSize="15" Cursor="Cross" Grid.Column="3" Height="30" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="106"/>
+        <GroupBox Grid.Column="1" Header="الموقع" Grid.Row="4" Margin="0,1,0,0" Grid.RowSpan="4" Grid.ColumnSpan="2"/>
+        <GroupBox Grid.Column="5" Header="MAIL" Grid.Row="4" Margin="2,1,1,0" Grid.RowSpan="4" Grid.ColumnSpan="2">
+            <Grid/>
+        </GroupBox>
+        <GroupBox Grid.Column="3" Header="FM6 بطاقة" Grid.Row="4" Grid.ColumnSpan="2" Margin="1,1,3,0" Grid.RowSpan="4"/>
+        <GroupBox Grid.Column="1" Header="أرشيف" Grid.Row="8" Margin="0,1,0,1" Grid.ColumnSpan="2" Grid.RowSpan="4"/>
+        <GroupBox Grid.Column="3" Header="خدمات" Grid.Row="8" Margin="4,2,6,0" Grid.ColumnSpan="2" Grid.RowSpan="4"/>
+        <GroupBox Grid.Column="5" Header=" التمويل" Grid.Row="8" Margin="3,2,1,0" Grid.ColumnSpan="2" Grid.RowSpan="4"/>
+        <Label  Content="المستخدمين" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="1,0,17,0" IsEnabled="False" Grid.Column="6" Grid.Row="5" Height="34" VerticalAlignment="Center"/>
+        <Button BorderBrush="Transparent" Background="#1111" Content="انقر هنا" Margin="50,4,22,6" Grid.Row="5" Grid.Column="5"/>
+        <Border Background="#1111"
+            
+            Opacity="0.7" Margin="51,4,23,5" Grid.Row="6" Grid.Column="5">
+            <TextBox   Background="Transparent" 
+                BorderThickness="0"
+                Text=""
+                VerticalAlignment="Center"
+                IsEnabled="False" Height="17"
+                                   />
+
+        </Border>
+        <Border Background="#1111"
+            
+            Opacity="0.7" Margin="51,7,23,6" Grid.Row="7" Grid.Column="5">
+            <TextBox   Background="Transparent" 
+                BorderThickness="0"
+                Text=""
+                VerticalAlignment="Center"
+                IsEnabled="False" Height="17"
+                                   />
+
+        </Border>
+        <Label  Content="عدد الزيارات" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="0,0,18,0" IsEnabled="False" Grid.Column="6" Grid.Row="6" Height="35" VerticalAlignment="Center"/>
+        <Label  Content="مدة الزيارات" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="0,0,18,0" IsEnabled="False" Grid.Column="6" Grid.Row="7" Height="34" VerticalAlignment="Center"/>
+        <Label  Content="المستخدمين" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="2,0,16,0" IsEnabled="False" Grid.Column="6" Grid.Row="9" Height="34" VerticalAlignment="Center"/>
+        <Button BorderBrush="Transparent" Background="#1111" Content="انقر هنا" Margin="52,6,20,5" Grid.Row="9" Grid.Column="5"/>
+        <Border Background="#1111"
+            
+            Opacity="0.7" Margin="53,6,21,7" Grid.Row="10" Grid.Column="5">
+            <TextBox   Background="Transparent" 
+                BorderThickness="0"
+                Text=""
+                VerticalAlignment="Center"
+                IsEnabled="False" Height="17"
+                                   />
+
+        </Border>
+        <Label  Content="عدد الزيارات" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="2,0,16,0" IsEnabled="False" Grid.Column="6" Grid.Row="10" Height="35" VerticalAlignment="Center"/>
+        <Border Background="#1111"
+            
+            Opacity="0.7" Margin="53,7,21,4" Grid.Row="11" Grid.Column="5">
+            <TextBox   Background="Transparent" 
+                BorderThickness="0"
+                Text=""
+                VerticalAlignment="Center"
+                IsEnabled="False" Height="17"
+                                   />
+
+        </Border>
+        <Label  Content="مدة الزيارات" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="2,0,16,0" IsEnabled="False" Grid.Column="6" Grid.Row="11" Height="34" VerticalAlignment="Center"/>
+        <Label  Content="المستخدمين" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="3,0,20,0" IsEnabled="False" Grid.Column="4" Grid.Row="5" Height="34" VerticalAlignment="Center"/>
+        <Button BorderBrush="Transparent" Background="#1111" Content="انقر هنا" Margin="53,5,20,5" Grid.Row="5" Grid.Column="3"/>
+        <Border Background="#1111"
+            
+            Opacity="0.7" Margin="53,5,22,4" Grid.Row="6" Grid.Column="3">
+            <TextBox   Background="Transparent" 
+                BorderThickness="0"
+                Text=""
+                VerticalAlignment="Center"
+                IsEnabled="False" Height="17"
+                                   />
+
+        </Border>
+        <Label  Content="عدد الزيارات" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="1,0,22,0" IsEnabled="False" Grid.Column="4" Grid.Row="6" Height="35" VerticalAlignment="Center"/>
+        <Border Background="#1111"
+            
+            Opacity="0.7" Margin="53,7,22,6" Grid.Row="7" Grid.Column="3">
+            <TextBox   Background="Transparent" 
+                BorderThickness="0"
+                Text=""
+                VerticalAlignment="Center"
+                IsEnabled="False" Height="17"
+                                   />
+
+        </Border>
+        <Label  Content="مدة الزيارات" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="1,0,22,0" IsEnabled="False" Grid.Column="4" Grid.Row="7" Height="34" VerticalAlignment="Center"/>
+        <Label  Content="المستخدمين" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="4,0,12,0" IsEnabled="False" Grid.Column="2" Grid.Row="5" Height="34" VerticalAlignment="Center"/>
+        <Button BorderBrush="Transparent" Background="#1111" Content="انقر هنا" Margin="50,5,20,5" Grid.Row="5" Grid.Column="1"/>
+        <Border Background="#1111"
+            
+            Opacity="0.7" Margin="51,5,21,4" Grid.Row="6" Grid.Column="1">
+            <TextBox   Background="Transparent" 
+                BorderThickness="0"
+                Text=""
+                VerticalAlignment="Center"
+                IsEnabled="False" Height="17"
+                                   />
+
+        </Border>
+        <Label  Content="عدد الزيارات" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="2,0,14,0" IsEnabled="False" Grid.Column="2" Grid.Row="6" Height="35" VerticalAlignment="Center"/>
+        <Border Background="#1111"
+            
+            Opacity="0.7" Margin="51,7,21,6" Grid.Row="7" Grid.Column="1">
+            <TextBox   Background="Transparent" 
+                BorderThickness="0"
+                Text=""
+                VerticalAlignment="Center"
+                IsEnabled="False" Height="17"
+                                   />
+
+        </Border>
+        <Label  Content="مدة الزيارات" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="2,5,14,0" IsEnabled="False" Grid.Column="2" Grid.Row="7" Height="34" VerticalAlignment="Top"/>
+        <Label  Content="المستخدمين" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="2,0,14,0" IsEnabled="False" Grid.Column="2" Grid.Row="9" Height="34" VerticalAlignment="Center"/>
+        <Button BorderBrush="Transparent" Background="#1111" Content="انقر هنا" Margin="51,8,19,3" Grid.Row="9" Grid.Column="1"/>
+        <Border Background="#1111"
+            
+            Opacity="0.7" Margin="52,7,20,6" Grid.Row="10" Grid.Column="1">
+            <TextBox   Background="Transparent" 
+                BorderThickness="0"
+                Text=""
+                VerticalAlignment="Center"
+                IsEnabled="False" Height="17"
+                                   />
+
+        </Border>
+        <Label  Content="عدد الزيارات" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="4,0,12,0" IsEnabled="False" Grid.Column="2" Grid.Row="10" Height="35" VerticalAlignment="Center"/>
+        <Border Background="#1111"
+            
+            Opacity="0.7" Margin="52,5,20,6" Grid.Row="11" Grid.Column="1">
+            <TextBox   Background="Transparent" 
+                BorderThickness="0"
+                Text=""
+                VerticalAlignment="Center"
+                IsEnabled="False" Height="17"
+                                   />
+
+        </Border>
+        <Label  Content="مدة الزيارات" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="6,0,10,0" IsEnabled="False" Grid.Column="2" Grid.Row="11" Height="34" VerticalAlignment="Center"/>
+        <Label  Content="المستخدمين" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="3,0,20,0" IsEnabled="False" Grid.Column="4" Grid.Row="9" Height="34" VerticalAlignment="Center"/>
+        <Button BorderBrush="Transparent" Background="#1111" Content="انقر هنا" Margin="53,5,20,6" Grid.Row="9" Grid.Column="3"/>
+        <Border Background="#1111"
+            
+            Opacity="0.7" Margin="54,5,21,8" Grid.Row="10" Grid.Column="3">
+            <TextBox   Background="Transparent" 
+                BorderThickness="0"
+                Text=""
+                VerticalAlignment="Center"
+                IsEnabled="False" Height="17"
+                                   />
+
+        </Border>
+        <Label  Content="عدد الزيارات" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="1,0,22,0" IsEnabled="False" Grid.Column="4" Grid.Row="10" Height="35" VerticalAlignment="Center"/>
+        <Border Background="#1111"
+            
+            Opacity="0.7" Margin="54,6,21,5" Grid.Row="11" Grid.Column="3">
+            <TextBox   Background="Transparent" 
+                BorderThickness="0"
+                Text=""
+                VerticalAlignment="Center"
+                IsEnabled="False" Height="17"
+                                   />
+
+        </Border>
+        <Label  Content="مدة الزيارات" FontSize="17" HorizontalContentAlignment="Center" Cursor="Hand" Margin="1,0,22,0" IsEnabled="False" Grid.Column="4" Grid.Row="11" Height="34" VerticalAlignment="Center"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,101 @@
+﻿<Window x:Class="FM6_H.mdpOblier"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FM6_H"
+        mc:Ignorable="d"
+        Title="mdpOblier" Height="401"
+Width="476" WindowStartupLocation="CenterScreen"   >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="104*"/>
+            <ColumnDefinition Width="94*"/>
+            <ColumnDefinition Width="89*"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="64*"/>
+            <ColumnDefinition Width="118*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="66*"/>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="109*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Label" HorizontalAlignment="Left" Height="8" Margin="-18,-5,0,0" VerticalAlignment="Top" Width="7" Grid.RowSpan="2"/>
+        <Border Background="#1111"
+         CornerRadius="5"
+         Opacity="0.7" Margin="34,11,33,15" Grid.Row="3" Grid.ColumnSpan="5">
+            <TextBox x:Name="txtEmailOublier"   Background="Transparent" 
+             BorderThickness="0"
+             Width="300"
+                               
+             Text=""
+                                
+             VerticalAlignment="Center"
+                                />
+
+        </Border>
+        <Label Grid.Column="4" Content="البريد الالكتروني"  Grid.Row="3" VerticalAlignment="Top" FontSize="16" Margin="52,7,13,0" Height="34" Cursor="Cross" Grid.ColumnSpan="2"/>
+        <Border BorderBrush="Transparent" BorderThickness="1" Grid.Column="2" Grid.Row="5" Margin="20,17,23,6" Grid.ColumnSpan="3">
+            <Button  
+         
+             Content="إرسال"
+              
+             FontFamily="Century Gothic"
+             Foreground="white"
+                FontSize="10"
+             Background="#13FF00"
+             BorderThickness="0"
+             Padding="10"
+             Margin="10,5" FontWeight="Bold" Click="sendbtn">
+
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}" >
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+
+            </Button>
+        </Border>
+        <Label Grid.Column="4" Content="كلمة السر الجديدة"  Grid.Row="4" VerticalAlignment="Top" FontSize="16" Margin="44,19,5,0" Height="34" Cursor="Cross" Grid.ColumnSpan="2"/>
+        <Border BorderBrush="Transparent" BorderThickness="1" Grid.Row="5" Margin="71,17,10,6" Grid.ColumnSpan="2">
+            <Button  
+         
+                Content="إلغاء"
+              
+                FontFamily="Century Gothic"
+                Foreground="white"
+                FontSize="10"
+                Background="red"
+                BorderThickness="0"
+                Padding="10"
+                Margin="21,5,-1,5" FontWeight="Bold" Click="cancelbtn">
+
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}" >
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+
+            </Button>
+        </Border>
+        <Border Background="#1111"
+            CornerRadius="5"
+            Opacity="0.7" Margin="34,19,33,8" Grid.Row="4" Grid.ColumnSpan="5">
+            <TextBox x:Name="txtNvMDP"   Background="Transparent" 
+                BorderThickness="0"
+                Width="300"
+                               
+                Text=""
+                                
+                VerticalAlignment="Center"
+                                />
+
+        </Border>
+
+    </Grid>
+</Window>

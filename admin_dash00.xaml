@@ -1,0 +1,17 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FM6_H"
+        xmlns:b="http://schemas.microsoft.com/xaml/behaviors" x:Class="FM6_H.admin_dash00"
+        mc:Ignorable="d"
+    
+        Title="admin_dash00" Height="1175" Width="1256.267" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Grid/>
+</Window>
+
+
+

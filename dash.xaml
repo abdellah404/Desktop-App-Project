@@ -1,0 +1,270 @@
+﻿<Window x:Class="FM6_H.dash"
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     
+        
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:local="clr-namespace:FM6_H"
+        mc:Ignorable="d"
+        Title="dash" Height="698.19" Width="1256.267" ResizeMode="CanResize" WindowStartupLocation="CenterScreen" Loaded="window_Loaded" WindowState="Maximized">
+    <Grid>
+
+
+
+
+
+
+
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="85*"/>
+            <RowDefinition Height="27*"/>
+            <RowDefinition Height="178*"/>
+            <RowDefinition Height="178*"/>
+            <RowDefinition Height="178*"/>
+            <RowDefinition Height="14*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="290*"/>
+            <ColumnDefinition Width="306*"/>
+            <ColumnDefinition Width="165*"/>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="110*"/>
+            <ColumnDefinition Width="29*"/>
+            <ColumnDefinition Width="293*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+
+
+
+        <Grid Background="#1111" RenderTransformOrigin="0.5,0.5" Margin="13,0,0,0" Grid.Column="7" Grid.RowSpan="6">
+
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.004"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+
+
+
+            <Button Content="حسابك"  VerticalAlignment="Top" Height="63" Background="#3A00FF" FontFamily="Century Gothic" FontSize="20" Foreground="#FFFBFBFB" BorderBrush="{x:Null}" Margin="0,95,0,0" Click="Button_Click_4"   />
+            <Button Content="الحاسبة"  VerticalAlignment="Top" Height="63" Background="#00AAFF" FontFamily="Century Gothic" FontSize="20" Foreground="#FFFBFBFB" BorderBrush="{x:Null}" Margin="0,155,0,0" Click="showCalculator"/>
+            <Button Content="تسجيل الخروج" Background="Red" FontFamily="Century Gothic" FontSize="20" Foreground="#FFFBFBFB" RenderTransformOrigin="0.458,1.651" BorderBrush="{x:Null}" Click="Button_Click_2" Margin="0,0,0,28" Height="66" VerticalAlignment="Bottom"/>
+            <Button Content="إحصائيات"  VerticalAlignment="Top" Height="63" Background="#3A00FF" FontFamily="Century Gothic" FontSize="20" Foreground="#FFFBFBFB" BorderBrush="{x:Null}" Margin="0,215,0,0" Click="Button_Click_5" />
+        </Grid>
+        <Grid Height="96" VerticalAlignment="Top" Background="#1111" Grid.ColumnSpan="8" Grid.RowSpan="2" >
+            <Image  HorizontalAlignment="Left" Height="26" Margin="793,0,0,0" VerticalAlignment="Center" Width="38"  RenderTransformOrigin="0.031,0.355" IsEnabled="False"/>
+            <Label Foreground="Black" x:Name="lbldate" Content="" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="265" Height="37"/>
+
+
+        </Grid>
+
+        <!--<Image x:Name="btnNotification" Height="38"  Margin="2,25,249,0" VerticalAlignment="Top" Grid.Column="2" Source="/icons8-notification-48.png" Cursor="Hand"/>-->
+
+        <Label x:Name="lblGreeting" FontSize="20" HorizontalContentAlignment="Center" Grid.Column="3" Content="" HorizontalAlignment="Left" VerticalAlignment="Center" Height="68" Width="319" Margin="10,0,0,0" Grid.ColumnSpan="4" FontWeight="Bold"/>
+        <WrapPanel Grid.Row="1" Grid.ColumnSpan="7" Margin="30,0,0,8" Grid.RowSpan="4">
+            <Button  
+                Click="ApplicationButton_Click" Tag="websiteApp"
+                x:Name="websiteApp"
+                Content="WEBSITE"
+                FontFamily="Century Gothic"
+                Foreground="white"
+                Background="#FFCD00"
+                BorderThickness="0"
+                Height="200" Width="300"
+                Margin="10"                 >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </Button.Resources>
+
+            </Button>
+            <Button  
+                
+                Click="ApplicationButton_Click" Tag="projectApp"
+                x:Name="projectApp"
+                Content="PROJET"
+                 Margin="10"
+                FontFamily="Century Gothic"
+                Foreground="white"
+                Background="#FFCD00"
+                BorderThickness="0"
+                Height="200" Width="300"
+                >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </Button.Resources>
+
+            </Button>
+            <Button  
+                Click="ApplicationButton_Click" Tag="fm6carteApp"
+                x:Name="fm6carteApp"
+                Content="FM6 CARTE"
+                 Margin="10"
+                FontFamily="Century Gothic"
+                Foreground="white"
+                Background="#FFCD00"
+                BorderThickness="0"
+                Height="200" Width="300"
+                >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </Button.Resources>
+
+            </Button>
+            <Button  
+                x:Name="mailApp"
+                Click="ApplicationButton_Click" Tag="mailApp"
+                Content="MAIL"
+                FontFamily="Century Gothic"
+                Foreground="white"
+                 Margin="10"
+                Background="#FFCD00"
+                BorderThickness="0"
+                Height="200" Width="300"
+                >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </Button.Resources>
+
+            </Button>
+            <Button  
+                
+                Click="ApplicationButton_Click" Tag="financeApp"
+                x:Name="financeApp"
+                Content="FINANCE"
+                 Margin="10"
+                FontFamily="Century Gothic"
+                Foreground="white"
+                Background="#FFCD00"
+                BorderThickness="0"
+                Height="200" Width="300"
+                >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </Button.Resources>
+
+            </Button>
+            <Button  
+                x:Name="boApp"
+                Click="ApplicationButton_Click" Tag="boApp"
+                Content="BO"
+                FontFamily="Century Gothic"
+                Foreground="white"
+                 Margin="10"
+                Background="#FFCD00"
+                BorderThickness="0"
+                Height="200" Width="300"
+                >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </Button.Resources>
+
+            </Button>
+            <Button  
+                Click="ApplicationButton_Click" Tag="archiveApp"
+                x:Name="archiveApp"
+                Content="ARCHIVE"
+                 Margin="10"
+                FontFamily="Century Gothic"
+                Foreground="white"
+                Background="#FFCD00"
+                BorderThickness="0"
+                Height="200" Width="300"
+                >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </Button.Resources>
+
+            </Button>
+            <Button  
+                Click="ApplicationButton_Click" Tag="servicesApp"
+                x:Name="servicesApp"
+                Content="SERVICES"
+                FontFamily="Century Gothic"
+                Foreground="white"
+                 Margin="10"
+                Background="#FFCD00"
+                BorderThickness="0"
+                Height="200" Width="300"
+                >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </Button.Resources>
+
+            </Button>
+            <Button  
+                Click="ApplicationButton_Click" Tag="medigesApp"
+                x:Name="medigesApp"
+                Content="MEDIGES"
+                FontFamily="Century Gothic"
+                Foreground="white"
+                Background="#FFCD00"
+                 Margin="10"
+                BorderThickness="0"
+                Height="200" Width="300"
+                >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </Button.Resources>
+
+            </Button>
+
+
+        </WrapPanel>
+
+
+
+
+
+        <Image x:Name="NotificationButton" Height="30" MouseLeftButtonDown="notifclick" Margin="2,25,249,0" VerticalAlignment="Top" Grid.Column="2" Source="/officon.png" Cursor="Hand">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Image>
+
+
+
+        <Image x:Name="NotificationButtonWithRedMark" Visibility="{Binding IsNotificationWithRedMarkVisible, Converter={StaticResource BooleanToVisibilityConverter}}" Height="30" MouseLeftButtonDown="notifclick" Margin="2,25,249,0" VerticalAlignment="Top" Grid.Column="2" Source="/onicon.png" Cursor="Hand">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseLeftButtonDown">
+                    <i:InvokeCommandAction />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Image>
+
+
+
+
+
+    </Grid>
+</Window>
+   

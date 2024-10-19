@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="cr71.png" />
+    <None Remove="goujo png1.png" />
+    <None Remove="icons8-notification-48.png" />
+    <None Remove="img.icons8.png" />
+    <None Remove="img.icons8WHITE.png" />
+    <None Remove="Layer 44.png" />
+    <None Remove="notif.png" />
+    <None Remove="notifi.png" />
+    <None Remove="officon.png" />
+    <None Remove="officonWHITE.png" />
+    <None Remove="onicon.png" />
+    <None Remove="oNiconWHITE.png" />
+    <None Remove="Website-PNG-HD.png" />
+    <None Remove="Website-PNG-wHD.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="itext7" Version="8.0.5" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.4" />
+    <PackageReference Include="MaterialDesignThemes" Version="5.1.0" />
+    <PackageReference Include="Microsoft.Win32.Primitives" Version="4.3.0" />
+    <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Win32.SystemEvents" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.122" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="cr71.png" />
+    <Resource Include="goujo png1.png" />
+    <Resource Include="icons8-notification-48.png" />
+    <Resource Include="img.icons8.png" />
+    <Resource Include="img.icons8WHITE.png" />
+    <Resource Include="Layer 44.png" />
+    <Resource Include="notif.png" />
+    <Resource Include="notifi.png" />
+    <Resource Include="officon.png" />
+    <Resource Include="officonWHITE.png" />
+    <Resource Include="onicon.png" />
+    <Resource Include="oNiconWHITE.png" />
+    <Resource Include="Website-PNG-HD.png" />
+    <Resource Include="Website-PNG-wHD.png" />
+  </ItemGroup>
+
+</Project>

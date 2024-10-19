@@ -1,0 +1,67 @@
+﻿<Window x:Class="FM6_H.accessApps"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FM6_H"
+        mc:Ignorable="d"
+        BorderThickness="0"
+        BorderBrush="Transparent"
+        Title="acessApps" WindowStartupLocation="CenterScreen"  WindowStyle="None" Height="512" Width="318">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="60*"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="79*"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Header="التطبيقات" Grid.RowSpan="12" Grid.ColumnSpan="2" FontWeight="Bold" BorderBrush="Black"/>
+        <CheckBox x:Name="websiteBox" Content="الموقع"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="24" Width="112" Margin="133,10,0,0" Grid.Row="1" FontFamily="Bauhaus 93" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="fm6CarteBox" Content="بطاقة FM6"  HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Height="18" Margin="133,4,0,0" Width="75" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="projectBox" Content="مشروع "  HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Center" Height="22"  Width="57" Margin="133,0,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="mailBox" Content="البريد"  HorizontalAlignment="Left" Grid.Row="6" VerticalAlignment="Center" Height="22" Width="48" Margin="133,0,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="financeBox" Content="المالية"  HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Center" Height="26" Margin="133,0,0,0"  Width="51" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="boBox" Content="مكتب الضبط"  HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Center" Height="19"  Width="103" Margin="133,0,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="archiveBox" Content="الأرشيف"  HorizontalAlignment="Left" Grid.Row="7" VerticalAlignment="Center" Height="19" Width="60" Margin="133,0,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="servicesBox" Content="الخدمات"  HorizontalAlignment="Left" Grid.Row="8" VerticalAlignment="Center" Height="18"  Width="60" Margin="133,0,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="medigesBox" Content="MEDIGES"  HorizontalAlignment="Left" Grid.Row="9" VerticalAlignment="Center" Height="18"  Width="86" Margin="133,0,0,0" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <Border BorderBrush="Transparent" BorderThickness="1" Grid.Column="1" Grid.Row="10" Margin="19,14,46,16" Grid.RowSpan="2"/>
+        <Button
+            Margin="10,11,7,26" FontSize="18" Padding="10" x:Name="cancelbtn" FontFamily="Century Gothic" Foreground="white" Content="إلغاء" BorderThickness="0" Background="red" Grid.Row="11" Click="cancelbtn_Click">
+            <Button.Resources
+        >
+                <Style
+                    TargetType="{x:Type Border}">
+                    <Setter
+                        Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button
+            Margin="8,11,21,26" FontSize="18" Padding="10" x:Name="savebtn" FontFamily="Century Gothic" Foreground="white" Content="حفظ" BorderThickness="0" Background="#13FF00" Grid.Column="1" Grid.Row="11" Click="savebtn_Click_1">
+            <Button.Resources
+        >
+                <Style
+                    TargetType="{x:Type Border}">
+                    <Setter
+                        Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+
+</Window>
