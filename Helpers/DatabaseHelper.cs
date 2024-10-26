@@ -9,7 +9,7 @@ namespace FM6_H.Helpers
     {
 
 
-        private static string connectionString = "connectionString";
+        private static string connectionString = "Data Source=DESKTOP-NLLSHRK\\SQLEXPRESS;Initial Catalog=DB_FM6;Integrated Security=True";
 
 
 

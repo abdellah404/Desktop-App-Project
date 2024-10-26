@@ -36,7 +36,7 @@
                         <TextBox x:Name="loginEmail"   Background="Transparent" 
         BorderThickness="0"
 
-        VerticalAlignment="Center" Margin="10,0,28,0"
+        VerticalAlignment="Center" Margin="10,0,28,0" Text="admin"
 />
 
                     </Border>
@@ -52,7 +52,7 @@
                         BorderBrush="Transparent"
                         Height="40"
                         Opacity="0.7" Canvas.Left="59" Canvas.Top="8" HorizontalAlignment="Left" VerticalAlignment="Center">
-                        <PasswordBox x:Name="loginPassword" BorderThickness="0"  Background="Transparent" BorderBrush="Transparent" Margin="10,10,10,10"/>
+                        <PasswordBox x:Name="loginPassword" BorderThickness="0"  Background="Transparent" BorderBrush="Transparent" Margin="10,10,10,10" Password="0"/>
                     </Border>
                 </Canvas>
                 <Canvas Height="59" Margin="0 20 0 0" >

@@ -8,7 +8,7 @@
         Title="admin_dash" Height="925" Width="1476" WindowStartupLocation="CenterScreen">
 
 
-    <Grid>
+    <Grid Margin="0,0,0,-50">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="708"/>
@@ -160,7 +160,7 @@
 
 
 
-        <Border MinWidth="400" Background="White" Padding="30" CornerRadius="10" MaxWidth="800"  Margin="42,51,242,27" Grid.Row="1" Grid.ColumnSpan="2">
+        <Border MinWidth="400" Background="White" Padding="30" CornerRadius="10" MaxWidth="800"  Margin="42,36,242,72" Grid.Row="1" Grid.ColumnSpan="2">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"/>
             </Border.Effect>
@@ -357,7 +357,7 @@
                         Content="حذف"
                         FontSize="14"
                         Foreground="white"
-                        Background="RED"
+                        Background="#ff5b5b"
                         BorderThickness="0"
             
                         Click="btnDelete" FontWeight="Bold" Height="42" Width="156" Canvas.Left="10" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="10">
@@ -373,7 +373,7 @@
                         Content="تحديث"
                         FontSize="14"
                         Foreground="white"
-                        Background="#FFCD00"
+                        Background="#e1b600"
                         BorderThickness="0"
             
                         Click="btnUpdate" FontWeight="Bold" Height="42" Width="148" HorizontalAlignment="Left" Canvas.Left="453" VerticalAlignment="Center" Canvas.Top="10">
@@ -390,7 +390,7 @@
                         Content="إضافة"
                         FontSize="14"
                         Foreground="white"
-                        Background="#13FF00"
+                        Background="#9acf68"
                         BorderThickness="0"
             
                         Click="btnAjouter" FontWeight="Bold" Height="42"   Width="149" HorizontalAlignment="Left" Canvas.Left="225" VerticalAlignment="Center" Canvas.Top="10">

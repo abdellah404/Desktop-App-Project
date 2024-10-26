@@ -134,7 +134,7 @@ namespace FM6_H
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("An error occurred: " + ex.Message);
+                    MessageBox.Show("حدث خطأ ما ! المرجو التحقق من المعطيات جيدا"/* + ex.Message*/);
                 }
                 finally
                 {
@@ -197,8 +197,9 @@ namespace FM6_H
 
             public override string ToString()
             {
-                return $"{ID_USER} {NOM} {PRENOM}";
+                return $"{NOM} {PRENOM}";
             }
+
         }
 
         private void FillComboBox()
@@ -232,13 +233,13 @@ namespace FM6_H
                         PRENOM = reader["PRENOM"].ToString()
                     };
                     SearchableComboBox.Items.Add(user);
-                    items.Add(user.NOM + " " + user.PRENOM + " " + user.ID_USER);
+                    items.Add(user.NOM + " " + user.PRENOM);
                 }
                 reader.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred: " + ex.Message);
+                MessageBox.Show(" حدث خطأ ما ! " + ex.Message);
             }
             finally
             {
@@ -249,20 +250,14 @@ namespace FM6_H
         private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             string searchText = SearchTextBox.Text.ToLower();
-            var filteredList = items.Where(item => item.ToLower().Contains(searchText)).ToList();
-            var filteredUsers = filteredList.Select(item =>
-            {
-                var parts = item.Split(' ');
-                return new User()
-                {
-                    NOM = parts[0],
-                    PRENOM = parts[1],
-                    ID_USER = int.Parse(parts[2])
-                };
-            }).ToList();
+            var filteredUsers = SearchableComboBox.Items.OfType<User>()
+                .Where(user => (user.NOM + " " + user.PRENOM).ToLower().Contains(searchText))
+                .ToList();
+
             SearchableComboBox.ItemsSource = filteredUsers;
             SearchableComboBox.IsDropDownOpen = true;
         }
+
 
         private void SearchableComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -315,7 +310,7 @@ namespace FM6_H
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("An error occurred: " + ex.Message);
+                    MessageBox.Show("حدث خطأ ما ! " + ex.Message);
                 }
                 finally
                 {
@@ -384,7 +379,7 @@ namespace FM6_H
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("An error occurred: " + ex.Message);
+                    MessageBox.Show("حدث خطأ ما ! " + ex.Message);
                 }
                 finally
                 {
@@ -488,13 +483,7 @@ namespace FM6_H
         }
 
 
-        public class Orders
-        {
-            public int productId { get; set; }
-            public string product { get; set; }
-            public int qty { get; set; }
-            public double price { get; set; }
-        }
+      
 
 
 
